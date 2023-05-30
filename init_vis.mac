@@ -1,0 +1,14 @@
+# Choose phantom sex (male or female)
+/phantom/setPhantomSex male 
+#
+# Choose phantom section (head, trunk or full)
+/phantom/setPhantomSection head
+#
+# Initialize kernel
+/run/initialize
+#
+# Load Visualization setting
+/control/execute vis.mac
+
+
+
