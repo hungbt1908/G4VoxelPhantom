@@ -85,6 +85,8 @@
     ```c++
     ./SimApp
     ```
+    ![](image/Screenshot%202023-05-31%20085456.png)
+
 - Run example in batch mode
     ```c++
     ./SimApp run.mac
