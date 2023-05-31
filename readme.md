@@ -1,4 +1,4 @@
-# G4-IAEA-PhaseSpace
+# G4VoxelPhantom
 
 ## ⭐ About this project
 * This project is modified from ICRP110 example that used voxel phantom type (in ICRP 110 report).
