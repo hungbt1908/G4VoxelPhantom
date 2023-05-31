@@ -1,13 +1,25 @@
 # G4-IAEA-PhaseSpace
 
 ## ⭐ About this project
-This project includes 2 examples about IAEA routine.
-* G4IAEApsf-Reader
-* G4IAEApsf-Writer
+* This project is modified from ICRP110 example that used voxel phantom type (in ICRP 110 report).
+* The below table summarises the features of male and female phantoms
+
+|Features|AM|AF|
+|--------|--|--|
+|Height(m)| 1.76 | 1.63|
+|Mass(kg)| 73.0 | 60.0 |
+|Slice thickness(mm)|8.0|4.84|
+|Pixel(in XY) resolution(mm)|2.173|1.775|
+|Number of voxels along X(columns)|254|299|
+|Number of voxels along Y(rows)|127|137|
+|Number of slices (along Z)|222|348|
+
+
 
 ## 🔧 Requirements
-* Ubuntu 20.04 (Tested)
+* Ubuntu 20.04/Win 11 (Tested)
 * Geant4.10.07 (Tested)
+* ICRPdata package
 
 #### a) Pre-Packages installation
 - Open Ubuntu Terminal and type the following commands to update Ubuntu system.
@@ -55,6 +67,8 @@ This project includes 2 examples about IAEA routine.
     source "/home/hungbt/Softwares/Geant4/install/share/Geant4-10.7.4/geant4make/geant4make.sh"
     ```
 
+#### d) Download ICRP dataset
+
 ## 🏃‍♂️ How to run
 - Create a new folder to build example. For example, I created "bld" folder.
     ```c++
@@ -75,6 +89,14 @@ This project includes 2 examples about IAEA routine.
     ```c++
     ./SimApp run.mac
     ```
+- You can select phantom type and sex by using following commands
+
+|Command|Variable|Explain|
+|-|-|-|
+|**/phantom/setPhantomSex**|(1) **male** or (2) **female**||
+|**/phantom/setPhantomSection**|(1) **head**, (2) **trunk** or (3) **full**||
+
+
 
 ## 📒 References
 1) [Capote, R., Jeraj, R., Ma, C. M., Rogers, D. W., Sánchez-Doblado, F., Sempau, J., ... & Siebers, J. V. (2006). Phase-space database for external beam radiotherapy. Summary report of a consultants' meeting.](https://inis.iaea.org/collection/NCLCollectionStore/_Public/37/073/37073778.pdf?r=1)
